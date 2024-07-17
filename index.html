@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>صيانه التكيفات </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    
+ <!-- ***** Preloader Start ***** -->
+ <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8">
+          <ul class="info">
+            <li><i class="fa fa-envelope"></i>hanymahmoud81984@gmail.com</li>
+            <li><i class="fa fa-map"></i>التجمع الخامس جاردينيا</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://x.com/minthu" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <h1>Elnakheel</h1>
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li><a href="index.html" class="active">الصفحه الرئيسيه</a></li>
+                      <li><a href="properties.html">خدماتنا</a></li>
+                      <li><a href="property-details.html">من نحن</a></li>
+                      <li><a href="contact.html">تواصلوا معنا</a></li>
+                      <li><a href="tel:%2001207720574"><i class="fa fa-calendar"></i>01207720574</a></li>
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+   
+
+<style>
+  /* تنسيق أيقونة الواتساب */
+  .whatsapp-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      background-color: #25D366;
+      color: #fff;
+      border-radius: 50%;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      text-decoration: none;
+      transition: transform 0.3s;
+  }
+  
+  .whatsapp-icon i {
+      font-size: 30px;
+  }
+  
+  .whatsapp-icon:hover {
+      transform: scale(1.1);
+  }
+  
+  /* تنسيق أيقونة الاتصال */
+  .call-icon {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      background-color: #007BFF;
+      color: #fff;
+      border-radius: 50%;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      text-decoration: none;
+      transition: transform 0.3s;
+  }
+  
+  .call-icon i {
+      font-size: 30px;
+  }
+  
+  .call-icon:hover {
+      transform: scale(1.1);
+  }
+  
+  /* استعلامات الوسائط لتحسين عرض الأيقونات على الشاشات الصغيرة */
+  @media (max-width: 767px) {
+      .whatsapp-icon,
+      .call-icon {
+          width: 50px;
+          height: 50px;
+          bottom: 15px;
+      }
+  
+      .whatsapp-icon i,
+      .call-icon i {
+          font-size: 25px;
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .whatsapp-icon,
+      .call-icon {
+          width: 40px;
+          height: 40px;
+          bottom: 10px;
+      }
+  
+      .whatsapp-icon i,
+      .call-icon i {
+          font-size: 20px;
+      }
+  }
+  
+  </style>
+  
+  <a href="https://wa.me/+2001207720574" class="whatsapp-icon" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+      </a>
+  
+      <!-- أيقونة الاتصال -->
+      <a href="tel:+2001207720574" class="call-icon" target="_blank">
+          <i class="fas fa-phone"></i>
+      </a>
+  
+  
+  
+  
+
+  <div class="main-banner">
+    <div class="owl-carousel owl-banner">
+      <div class="item item-1">
+        <div class="header-text">
+          <span class="category"> اتصل على <em>01207720574</em></span>
+          <h2>النخيل!<br>لتقديم افضل خدمة صيانه للتكيفات وتركيب جميع انواع التكيفات</h2>
+          <a  class="btn btn-success  btn-lg"  href="tel:%2001207720574" role="button" style="text-align: center;"> <div >  <i aria-hidden="true" class="fas fa-phone-square"></i> </span> <span class="elementor-icon-list-text"><b>اضغط للاتصال</b></span></li></ul></div>
+          </a>
+        </div>
+      </div>
+      <div class="item item-2">
+        <div class="header-text">
+          <span class="category">Melbourne, <em>Australia</em></span>
+          <h2>Be Quick!<br>نحن شركه النخيل الخاصه بمجال التكيفات </h2>
+        </div>
+      </div>
+      <div class="item item-3">
+        <div class="header-text">
+          <span class="category">Miami, <em>South Florida</em></span>
+          <h2>Act Now!<br>Get the highest level penthouse</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="featured section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="left-image">
+            <img  src="assets/images/air-conditioner-8846462.svg" alt="">
+            <a href=""><img src="assets/images/featured-icon.png" alt="" style="max-width: 60px; padding: 0px;"></a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="section-heading">
+            <h6>| عنا</h6>
+            <h2>لدينا افضل صيانه   &amp;وتركيب التكيفات</h2>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button style="color: orange;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  من نحن ?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                نحن <strong>شركه النخيل</strong>الخاصه بصيانه التكيفات المنزليه وتركيب التكيفات يعتبر شركه النخيل من الشركات الرائده في مجال التكيفات ولدينا خبره اكثر من 20 عاما من الكفاءه</div>
+                <a  class="btn btn-success  btn-lg"  href="tel:%2001207720574" role="button" style="text-align: center;"> <div >01207720574<i aria-hidden="true" class="fas fa-phone-square"></i> </span> <span class="elementor-icon-list-text"><b></b></span></li></ul></div>
+                </a>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    عن الشركة
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                 النخيل<strong> </strong> شركه
+                 متخصصة في تقديم خدمات متكاملة تشمل صيانة، إصلاح، تركيب، وتأسيس مواسير أجهزة التكييف. نتميز بفريق عمل محترف وذي خبرة طويلة في هذا المجال، معتمدين على أحدث التقنيات لضمان جودة الخدمة وراحة العملاء. هدفنا هو تحقيق أعلى مستويات الرضا من خلال تقديم حلول فعالة ومستدامة لكافة احتياجات التكييف.
+                 <a  class="btn btn-success  btn-lg"  href="tel:%2001207720574" role="button" style="text-align: center;"> <div >01207720574<i aria-hidden="true" class="fas fa-phone-square"></i> </span> <span class="elementor-icon-list-text"><b></b></span></li></ul></div>
+                 </a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  اعمالنا
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+               لدينا فريق كامل لتركيب التكيفات مدرب على اعلى مستوى من الكفاءه والخبره مع ضمان جوده الصيانه بحيث لا يحدث مشاكل خاصه بتركيب الاجهزه ويوجد لدينا صيانه دوريه كل سنه للشركات والمدارس والمؤسسات الخاصه والحكوميه,..
+                 
+                </div>
+                <a  class="btn btn-success  btn-lg"  href="tel:%2001207720574" role="button" style="text-align: center;"> <div >01207720574<i aria-hidden="true" class="fas fa-phone-square"></i> </span> <span class="elementor-icon-list-text"><b></b></span></li></ul></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="info-table">
+            <ul>
+              <li>
+                <img src="assets/images/info-icon-01.png" alt="" style="max-width: 52px;">
+                <h4>لدينا جميع انواع الاجهزه <br><span>يوجد جميع ماركات الاجهزه لدينا اتصل للاستفسار </span></h4>
+              </li>
+              <li>
+                <img src="assets/images/info-icon-02.png" alt="" style="max-width: 52px;">
+                <h4>لدينا جميع انواع قطع الغيار الخاصه بالمكيفات<br><span>يوجد لدينا قطع غيار اصليه مع ضمان كامل عند تركيبها</span></h4>
+              </li>
+              <li>
+                <img src="assets/images/info-icon-03.png" alt="" style="max-width: 52px;">
+                <h4>طريقه الدفع <br><span>لدينا اكتر من طريقه دفع عند إنتهاء الاوردر</span></h4>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+    }
+    .services {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .service {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        flex-basis: 22%;
+        margin: 20px 0;
+        padding: 20px;
+        text-align: center;
+    }
+    .service img {
+        width: 50px;
+        height: 50px;
+    }
+    .service h3 {
+        font-size: 20px;
+        color: #333;
+        margin: 10px 0;
+    }
+    .service p {
+        font-size: 16px;
+        color: #666;
+    }
+    h1 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+    @media (max-width: 1200px) {
+        .service {
+            flex-basis: 45%;
+        }
+    }
+    @media (max-width: 768px) {
+        .service {
+            flex-basis: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>خدماتنا</h1>
+    <div class="services">
+        <div class="service">
+            <img src="https://img.icons8.com/fluency/48/000000/air-conditioner.png" alt="تركيب التكييف">
+            <h3>تركيب التكييف</h3>
+            <p>نقدم خدمات تركيب التكييف بدقة واحترافية. يتولى فريقنا المتخصص تركيب جميع أنواع أجهزة التكييف مع ضمان التبريد الأمثل لتحقيق أفضل أداء وكفاءة في التبريد، مما يضمن لك بيئة مريحة ومنعشة.</p>
+        </div>
+        <div class="service">
+            <img src="https://img.icons8.com/fluency/48/000000/air-conditioner.png" alt="شحن فريون التكييف">
+            <h3>شحن فريون التكييف</h3>
+            <p>خدمة شحن فريون التكييف باستخدام أفضل أنواع الفريون المعتمدة لضمان أداء تبريد مثالي. نحرص على فحص الجهاز بانتظام والتأكد من عدم وجود تسريبات، مما يضمن لك تكييفاً فعالاً وبارداً طوال العام.</p>
+        </div>
+        <div class="service">
+            <img src="https://img.icons8.com/color/48/000000/maintenance.png" alt="صيانة التكييف">
+            <h3>صيانة التكييف</h3>
+            <p>نقدم خدمات صيانة شاملة لأجهزة التكييف لضمان كفاءتها وأدائها الأمثل. يتضمن ذلك تنظيف الفلاتر، فحص الكهرباء الإلكترونية، وضبط مستويات الفريون، مما يضمن لك بيئة مريحة ومروقة على مدار السنة.</p>
+        </div>
+        <div class="service">
+            <img src="https://img.icons8.com/color/48/000000/maintenance.png" alt="تأسيس مواسير التكييف">
+            <h3>تأسيس مواسير التكييف</h3>
+            <p>نقدم خدمات متخصصة في تأسيس مواسير التكييف بدقة واحترافية. نستخدم أفضل المواد والتقنيات الحديثة لضمان تركيب آمن وفعال لأنظمة التكييف، مما يضمن لك أداءً متميزاً وتدفق هواء مثالي في جميع الأوقات.</p>
+        </div>
+    </div>
+</div>
+
+  <div class="video section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 offset-lg-4">
+          <div class="section-heading text-center">
+            <h6>| Elnakheel</h6>
+            <h2>لدينا فريق مميز خاص بالتركيبات الاجهزه الجديده وفك وتركيب اجهزه التكيف</h2>
+            <a  class="btn btn-success  btn-lg"  href="tel:%2001207720574" role="button" style="text-align: center;"> <div >  <i aria-hidden="true" class="fas fa-phone-square"></i> </span> <span class="elementor-icon-list-text"><b>call now</b></span></li></ul></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="video-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="video-frame">
+            <img src="assets/images/WhatsApp Image 2024-07-14 at 02.00.39_3820c5c6.jpg" alt="">
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fun-facts">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="wrapper">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="counter">
+                  <h2 class="timer count-title count-number" data-to="4038" data-speed="10000"></h2>
+                   <p class="count-text ">عدد العملاء الحاليين<br></p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="counter">
+                  <h2 class="timer count-title count-number" data-to="20" data-speed="10000"></h2>
+                  <p class="count-text "><br>سنوات الخبره</p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="counter">
+                  <h2 class="timer count-title count-number" data-to="214" data-speed="10000">%</h2>
+                  <p class="count-text "><br>عدد الفنيين </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section best-deal">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="section-heading">
+            <h6>| حدد إمكانيه </h6>
+            <h2> جهازك حسب حجم الغرفه</h2>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="tabs-content">
+            <div class="row">
+              <div class="nav-wrapper ">
+                <ul class="nav nav-tabs" role="tablist">
+                    <a  class="btn btn-success  btn-lg"  href="tel:%2001207720574" role="button" style="text-align: center;"> <div >01207720574<i aria-hidden="true" class="fas fa-phone-square"></i> </span> <span class="elementor-icon-list-text"><b></b></span></li></ul></div>
+                    </a>
+                </ul>
+              </div>              
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="appartment" role="tabpanel" aria-labelledby="appartment-tab">
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <div class="info-table">
+                        <ul>
+                        <!-- هنا اعمل قوه الجهاز تبع التكيف-->
+                          <li>تكييف 1.5 حصان لمساحه.<span>12 m2</span></li>
+                          <li>تكييف 2.25 حصان لمساحة <span>20 m2</span></li>
+                          <li>تكييف 3 حصان لمساحة <span>26 m2</span></li>
+                          <li>تكييف 4 حصان لمساحة <span>30 m2</span></li>
+                          <li>تكييف 5 حصان لمساحة <span>40 m2</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <img src="assets/images/WhatsApp Image 2024-07-14 at 02.00.35_8a38492b.jpg" alt="">
+                    </div>
+                    <div class="col-lg-3">
+                      <h4>قسم المبيعات</h4>
+                      <p>لدينا جميع انواع الاجهزه التكيفات 1.5 حصان ,2.25 حصان و3 حصان و4حصان و5حصان
+                      <br><br>لدينا شحن سريع جدا لجميع محافظات مصر والشحن مجاني <br> خدمات مابعد البيع
+
+                      تركيب التكييفات والصيانه الدوريه وقطع الغيار الاصلية بافضل سعر <br> ضمان 5 سنوات
+
+                      ضمان 5 سنوات علي كل تكييف فقط تواصل معنا اذا حدث اي عطل<br> خدمات الصيانة الشامله
+
+                      يوجد لدينا خدمات الصيانه الدورية وقطع الغيار الاصليه 100% بالضمان<br> ضمان استعاده الاموال
+
+                      يمكن للعميل استعاده امواله بالكامل في خلال 14 يوم من الطلب<br> <button><a  class="btn btn-success  btn-lg"  href="tel:%2001100529324" role="button" style="text-align: center;"> <div >  <i aria-hidden="true" class="fas fa-phone-square"></i> </span> <span class="elementor-icon-list-text"><b>+20 110 052 9324</b></span></li></ul></div>
+                      </a></button></p>
+                      <div class="icon-button">
+                        <a href="!#"><i class="fa fa-calendar"></i> Schedule a visit</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="villa" role="tabpanel" aria-labelledby="villa-tab">
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <div class="info-table">
+                        <ul>
+                          <li>Total Flat Space <span>250 m2</span></li>
+                          <li>Floor number <span>26th</span></li>
+                          <li>Number of rooms <span>5</span></li>
+                          <li>Parking Available <span>Yes</span></li>
+                          <li>Payment Process <span>Bank</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <img src="assets/images/WhatsApp Image 2024-07-14 at 02.00.35_2550282e.jpg" alt="">
+                    </div>
+                    <div class="col-lg-3">
+                      <h4>Detail Info About Villa</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse. <br><br>Swag fanny pack lyft blog twee. JOMO ethical copper mug, succulents typewriter shaman DIY kitsch twee taiyaki fixie hella venmo after messenger poutine next level humblebrag swag franzen.</p>
+                      <div class="icon-button">
+                        <a href=""><i class="fa fa-calendar"></i> Schedule a visit</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="penthouse" role="tabpanel" aria-labelledby="penthouse-tab">
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <div class="info-table">
+                        <ul>
+                          <li>Total Flat Space <span>320 m2</span></li>
+                          <li>Floor number <span>34th</span></li>
+                          <li>Number of rooms <span>6</span></li>
+                          <li>Parking Available <span>Yes</span></li>
+                          <li>Payment Process <span>Bank</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <img src="assets/images/deal-03.jpg" alt="">
+                    </div>
+                    <div class="col-lg-3">
+                      <h4>Extra Info About Penthouse</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse. <br><br>Swag fanny pack lyft blog twee. JOMO ethical copper mug, succulents typewriter shaman DIY kitsch twee taiyaki fixie hella venmo after messenger poutine next level humblebrag swag franzen.</p>
+                      <div class="icon-button">
+                        <a href="property-details.html"><i class="fa fa-calendar"></i> Schedule a visit</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="properties section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 offset-lg-4">
+          <div class="section-heading text-center">
+            <h6>| Properties</h6>
+            <h2>We Provide The Best Property You Like</h2>
+          </div>
+        </div>
+      </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 offset-lg-4">
+          <div class="section-heading text-center">
+            <h6>| Contact Us</h6>
+            <h2>Get In Touch With Our Agents</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div id="">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55282.574444135396!2d31.461295767829974!3d30.003535915538013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583cc75436d909%3A0x7f921d4528ec3e03!2z2KfZhNiq2KzZhdi5INin2YTYrtin2YXYs9iMINin2YTZhdmG2LfZgtipINin2YTYtdmG2KfYudmK2KnYjCDZgtiz2YUg2KPZiNmEINin2YTZgtin2YfYsdipINin2YTYrNiv2YrYr9ip2Iwg2YXYrdin2YHYuNipINin2YTZgtin2YfYsdip4oCs!5e0!3m2!1sar!2seg!4v1721141758692!5m2!1sar!2seg" width="100%" height="500px" frameborder="0" style="border:0; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);" allowfullscreen=""></iframe>
+          </div>
+          
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="item phone">
+                <img src="assets/images/phone-icon.png" alt="" style="max-width: 52px;">
+                <h6>010-020-0340<br><span>Phone Number</span></h6>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="item email">
+                <img src="assets/images/email-icon.png" alt="" style="max-width: 52px;">
+                <h6>info@villa.co<br><span>Business Email</span></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <form id="contact-form" action="" method="post">
+            <div class="row">
+              <div class="col-lg-12">
+                <fieldset>
+                  <label for="name">Full Name</label>
+                  <input type="name" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <label for="email">Email Address</label>
+                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <label for="subject">Subject</label>
+                  <input type="subject" name="subject" id="subject" placeholder="Subject..." autocomplete="on" >
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="orange-button">Send Message</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <section class="ftco-section testimony-section ftco-bg-dark">
+      <div class="container">
+        <div class="row justify-content-center pb-5 mb-3">
+          <div class="col-md-7 heading-section heading-section-white text-center ftco-animate">
+          	<span class="subheading">Testimonies</span>
+            <h2>Happy Customer</h2>
+          </div>
+        </div>
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel ftco-owl">
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-right"></span></div>
+                  <div class="text">
+                  	<div class="d-flex align-items-center mb-4">
+                    	<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+                    	<div class="pl-3">
+		                    <p class="name">Roger Scott</p>
+		                    <span class="position">Marketing Manager</span>
+		                  </div>
+	                  </div>
+                    <p class="mb-1">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-right"></span></div>
+                  <div class="text">
+                  	<div class="d-flex align-items-center mb-4">
+                    	<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+                    	<div class="pl-3">
+		                    <p class="name">Roger Scott</p>
+		                    <span class="position">Marketing Manager</span>
+		                  </div>
+	                  </div>
+                    <p class="mb-1">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-right"></span></div>
+                  <div class="text">
+                  	<div class="d-flex align-items-center mb-4">
+                    	<div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
+                    	<div class="pl-3">
+		                    <p class="name">Roger Scott</p>
+		                    <span class="position">Marketing Manager</span>
+		                  </div>
+	                  </div>
+                    <p class="mb-1">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-right"></span></div>
+                  <div class="text">
+                  	<div class="d-flex align-items-center mb-4">
+                    	<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+                    	<div class="pl-3">
+		                    <p class="name">Roger Scott</p>
+		                    <span class="position">Marketing Manager</span>
+		                  </div>
+	                  </div>
+                    <p class="mb-1">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-right"></span></div>
+                  <div class="text">
+                  	<div class="d-flex align-items-center mb-4">
+                    	<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+                    	<div class="pl-3">
+		                    <p class="name">Roger Scott</p>
+		                    <span class="position">Marketing Manager</span>
+		                  </div>
+	                  </div>
+                    <p class="mb-1">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+		
+	
+		
+
+    <section class="ftco-section ftco-intro" style="background-image: url('images/bg_3.jpg');" data-stellar-background-ratio="0.5">
+    	<div class="overlay"></div>
+    	<div class="container">
+    		<div class="row justify-content-center">
+    			<div class="col-md-8 text-center">
+    				<h2>Together we will explore new things</h2>
+    				<a href="" class="icon-video d-flex align-items-center justify-content-center"><span class="fa fa-play"></span></a>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+  
+
+    <footer class="footer ftco-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+						<h2 class="footer-heading">Cleaning Company</h2>
+						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-4">
+              <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+            </ul>
+					</div>
+					<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+						<h2 class="footer-heading">Latest News</h2>
+						<div class="block-21 mb-4 d-flex">
+              <a class="img mr-4 rounded" style="background-image: url(images/image_1.jpg);"></a>
+              <div class="text">
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                <div class="meta">
+                  <div><a href="#"><span class="icon-calendar"></span> Mar. 04, 2020</a></div>
+                  <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                  <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="block-21 mb-4 d-flex">
+              <a class="img mr-4 rounded" style="background-image: url(images/image_2.jpg);"></a>
+              <div class="text">
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                <div class="meta">
+                  <div><a href="#"><span class="icon-calendar"></span> Mar. 04, 2020</a></div>
+                  <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                  <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                </div>
+              </div>
+            </div>
+					</div>
+					<div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+						<h2 class="footer-heading">Quick Links</h2>
+						<ul class="list-unstyled">
+              <li><a href="#" class="py-1 d-block">Home</a></li>
+              <li><a href="#" class="py-1 d-block">About</a></li>
+              <li><a href="#" class="py-1 d-block">Services</a></li>
+              <li><a href="#" class="py-1 d-block">Works</a></li>
+              <li><a href="#" class="py-1 d-block">Blog</a></li>
+              <li><a href="#" class="py-1 d-block">Contact</a></li>
+            </ul>
+					</div>
+					<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+						<h2 class="footer-heading">Have a Questions?</h2>
+						<div class="block-23 mb-3">
+              <ul>
+                <li><span class="icon fa fa-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+                <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">info@yourdomain.com</span></a></li>
+              </ul>
+            </div>
+					</div>
+				</div>
+				<div class="row mt-5">
+          <div class="col-md-12 text-center">
+
+            <p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+			</div>
+		</footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>
